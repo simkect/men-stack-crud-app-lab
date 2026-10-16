@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= drug.name  %></title>
+</head>
+
+<body>
+  <a href="/drugs/">Back to Drugs</a>
+
+  <h1><%= drug.name %></h1>
+
+  <form action="/drugs/<%=drug._id%>?_method=DELETE" method="POST">
+    <button type="submit">Delete <%= fruit.name %></button>
+  </form>
+  <a href="/drugs/<%= drug._id %>/edit">Edit <%= drug.name %></a>
+</body>
+
+</html>
